@@ -322,6 +322,7 @@ input:disabled,
 }
 .modal.side-open .modal-dialog {
   width: 750px !important;
+  max-width: 750px !important;
   margin-right: 0;
   margin-top: 0;
   height: 100vh;
@@ -560,8 +561,8 @@ body {
 }
 .profile-form {
   padding: 3rem 2rem;
-}
-/* .slider {
+/* }
+ .slider {
   position: absolute;
   cursor: pointer;
   /* top: 0;
@@ -633,11 +634,7 @@ border-radius: 16px;
   padding-top: 25%;
   opacity: .80;
 }
-button {
-  margin: 40px;
-  padding: 5px 20px;
-  cursor: pointer;
-}
+
 .spinner {
     margin: 0 auto;
     height: 64px;
