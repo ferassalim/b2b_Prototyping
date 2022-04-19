@@ -282,6 +282,26 @@ hr {
   height: 18px; 
   margin-right: 5px;
 }
+.left-side-ticker{
+  padding-top: 7px; 
+  padding-left: 20px; 
+  font-size: 12px; 
+  font-weight: 400; 
+  line-height: 16px; 
+  border-right: 1px solid red; 
+  padding-right: 5px; 
+  color: red; 
+  top: 60px; 
+  width: 30%; 
+  height: 32px; 
+  background-color: white; 
+  white-space: nowrap; 
+  overflow-x: scroll; 
+  overflow-y: hidden; 
+}
+::-webkit-scrollbar {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .cart-items-count {
