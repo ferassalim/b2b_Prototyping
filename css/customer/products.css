@@ -249,7 +249,6 @@ hr {
 }
 
 .cart-bar {
-  bottom: 50px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 52px;
   background-color: #0038FF;
@@ -299,6 +298,8 @@ hr {
   overflow-x: scroll; 
   overflow-y: hidden; 
 }
+
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -318,6 +319,11 @@ hr {
     display: none;
   }
 }
+
+.main-container {
+  margin-top: 110px;
+}
+
 
 
 @-webkit-keyframes ticker {
