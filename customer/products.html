@@ -145,7 +145,8 @@
               </div>
             </section>
           </div>
-          <div class="col-lg-6 col-12">
+          <div class="col-lg-6 col-12" style="position: relative;">
+            <img src="../img/icons/search.svg" style="width: 15px; height: 15px; position: absolute; right: 30px; top: 10px;" >
             <input style="border-radius: 30px; margin-bottom: 10px;" placeholder="Search..." id="typeahead-format" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search"
               [resultFormatter]="formatter" />
           </div>
