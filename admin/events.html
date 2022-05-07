@@ -1016,7 +1016,7 @@
 
     <!-- Add event Modal -->
     <div
-      class="modal fade side-open"
+      class="modal fade"
       id="addEvent"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
@@ -1024,26 +1024,39 @@
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-lg modal-dialog-scrollable">
-        <form class="modal-content">
-          <div class="modal-header">
+      <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+        <form class="modal-content primary-grey-backfround">
+          <div class="modal-header white-background border-0">
             <h3 class="modal-title ps-3" id="modalOrderLabel">New Event</h3>
+
+
+            <div class="modal-buttons-container">
             <button
               type="button"
-              class="btn-close"
+              class="btn btn-secondary rounded-pill"
               data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary rounded-pill">
+              Save &amp; Continue
+            </button> 
           </div>
-          <div class="modal-body p-4">
-            <ul
-              class="nav nav-pills mb-5 ev-create"
+
+          </div>
+          <div class="modal-body ps-0">
+            <div class="row full-height">
+              <div class="col-2 ps-0">
+                <div class="steps-card">
+
+                <ul
+              class="nav"
               id="pills-tab"
               role="tablist"
             >
-              <li class="nav-item" role="presentation">
+              <li class="nav-item modal-tabs-button-container" role="presentation">
                 <button
-                  class="nav-link border rounded-pill active"
+                  class="btn btn-light modal-tabs-buttons active"
                   id="pills-genInfo-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-genInfo"
@@ -1052,12 +1065,20 @@
                   aria-controls="pills-genInfo"
                   aria-selected="false"
                 >
-                  1. General Information
+                <div class="row">
+                  <div class="col-2">
+                  <img src="../img/icons/info-outlined-events.svg" class="modal-tabs-button-info-icon" /> 
+                  </div>
+                
+                  <div class="col-10 modal-tabs-button-title">
+                  General Information
+                </div>
+              </div>
                 </button>
               </li>
-              <li class="nav-item" role="presentation">
+              <li class="nav-item modal-tabs-button-container" role="presentation">
                 <button
-                  class="nav-link border rounded-pill"
+                  class="btn btn-light modal-tabs-buttons"
                   id="pills-time-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-time"
@@ -1066,12 +1087,20 @@
                   aria-controls="pills-time"
                   aria-selected="true"
                 >
-                  2. Time Periods
+                <div class="row">
+                  <div class="col-2">
+                  <img src="../img/icons/time-icon-events.svg" class="modal-tabs-button-time-icon" /> 
+                  </div>
+                
+                  <div class="col-10 modal-tabs-button-title">
+                    Time Periods
+                </div>
+                  
                 </button>
               </li>
-              <li class="nav-item" role="presentation">
+              <li class="nav-item modal-tabs-button-container" role="presentation">
                 <button
-                  class="nav-link border rounded-pill"
+                  class="btn btn-light modal-tabs-buttons"
                   id="pills-product-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-product"
@@ -1080,11 +1109,52 @@
                   aria-controls="pills-product"
                   aria-selected="false"
                 >
-                  3. Products
+                <div class="row">
+                  <div class="col-2">
+                  <img src="../img/icons/product-icon-events.svg" class="modal-tabs-button-product-icon" /> 
+                  </div>
+                
+                  <div class="col-10 modal-tabs-button-title">
+                    Products
+                </div>
+                  
                 </button>
               </li>
+              <li class="nav-item modal-tabs-button-container" role="presentation">
+                <button
+                  class="btn btn-light modal-tabs-buttons"
+                  id="pills-deposits-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-deposits"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-deposits"
+                  aria-selected="false"
+                >
+                <div class="row">
+                  <div class="col-2 text-center">
+                  <img src="../img/icons/deposite-icon-events.svg" class="modal-tabs-button-deposits-icon" /> 
+                  </div>
+                
+                  <div class="col-10 modal-tabs-button-title">
+                    Deposits
+                </div>
+                
+                </button>
+              </li>
+            
             </ul>
-            <div class="tab-content" id="pills-tabContent">
+
+
+          </div>
+              </div>
+              <div class="col-10">
+
+                
+                
+              
+            
+            <div class="tab-content white-background details-card" id="pills-tabContent">
               <div
                 class="tab-pane fade show active"
                 id="pills-genInfo"
@@ -1480,18 +1550,10 @@
               <!--  -->
             </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <button type="button" class="btn btn-primary">
-              Save &amp; Continue
-            </button>
-          </div>
+
+        </div>
+      </div>
+
         </form>
       </div>
     </div>

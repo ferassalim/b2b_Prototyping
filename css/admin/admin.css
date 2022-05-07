@@ -120,3 +120,73 @@ main {
 .search-rounded app-form-dropdown .form-group ngb-typeahead-window{
   width: 80%;
 }
+
+/* Modals */
+.steps-card{
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+}
+.details-card{
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.modal-buttons-container {
+  float: right; 
+  text-align: end;
+}
+
+.modal-tabs-button-container {
+  width: 100% !important;
+}
+
+.modal-tabs-button-info-icon {
+  width: 16px;
+}
+.modal-tabs-button-product-icon {
+  width: 16px;
+}
+.modal-tabs-button-time-icon {
+  width: 16px;
+}
+.modal-tabs-button-deposits-icon {
+  width: 8px;
+}
+
+.modal-tabs-button-title {
+  padding-top: 2px; 
+  padding-left: 0px;
+}
+
+.modal-tabs-buttons {
+  display: block;
+  width: 95%; 
+  margin: 7px 10px 7px 10px; 
+  color: #0038FF; 
+  background-color: #F5F5F5;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px; 
+  text-align: start; 
+  border-radius: 10px; 
+  padding: 5px;
+  
+}
+
+.white-background{
+  background-color: #FFFFFF;
+}
+
+.primary-grey-backfround{
+  background-color: #F5F5F5;
+}
+
+.full-height{
+  height: 100%;
+}
