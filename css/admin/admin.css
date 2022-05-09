@@ -91,8 +91,11 @@ main {
   display: none;
 }
 .ev-img-placeholder {
-  width: 100px;
-  height: 107px;
+  width: 90px;
+  height: 70px; 
+  border-radius: 8px; 
+  margin-bottom: 10px; 
+  overflow: hidden;
 }
  .search-rounded{
   max-height: 38px;
@@ -189,4 +192,19 @@ main {
 
 .full-height{
   height: 100%;
+}
+
+.new-event-form-input {
+  background-color: #F5F5F5;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  margin-top: 10px;
+  background: url(../../img/icons/triangle_down.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
 }

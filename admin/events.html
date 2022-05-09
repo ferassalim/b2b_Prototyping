@@ -1166,27 +1166,7 @@
                     class="d-flex align-items-center justify-content-start flex-gap-20"
                   >
                     <div class="ev-img-placeholder">
-                      <!-- <img src="../img/img-placeholder.svg" class="img-thumbnail"> -->
-                      <svg
-                        class="bd-placeholder-img img-thumbnail"
-                        width="200"
-                        height="200"
-                        xmlns="http://www.w3.org/2000/svg"
-                        role="img"
-                        aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200"
-                        preserveAspectRatio="xMidYMid slice"
-                        focusable="false"
-                      >
-                        <title>
-                          A generic square placeholder image with a white border
-                          around it, making it resemble a photograph taken with
-                          an old instant camera
-                        </title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect>
-                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
-                          400x400
-                        </text>
-                      </svg>
+                      <img src="../img/icons/image_placeholder.svg" />
                     </div>
                     <div class="w-100">
                       <input class="form-control" type="file" id="formFile" />
@@ -1195,59 +1175,44 @@
                       >
                     </div>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="eventName"
-                      placeholder="Event name"
-                    />
-                    <label for="eventName">Event name</label>
+                  <div class="form-group filled-text new-event-form-input">
+                    <input type="text" class="form-control" id="eventName" required autofocus>
+                    <span class="form-bar"></span>
+                    <label class="form-label" for="eventName">Event name</label>
                   </div>
+                  
                 </div>
 
                 <div class="d-flex justify-content-between">
-                  <div class="form-floating mb-3 w-48">
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="eventFrom"
-                      placeholder="Event from"
-                    />
-                    <label for="eventFrom">From</label>
+                  <div class="form-group filled-text new-event-form-input" style="margin-right: 30px;">
+                    <input type="date" class="form-control" id="eventStartDate">
+                    <span class="form-bar"></span>
+                    <label class="form-label" for="eventStartDate">From</label>
                   </div>
-                  <div class="form-floating mb-3 w-48">
-                    <input
-                      type="date"
-                      class="form-control"
-                      id="eventTo"
-                      placeholder="Event to"
-                    />
-                    <label for="eventTo">To</label>
+                  <div class="form-group filled-text new-event-form-input" style="margin-left: 30px;">
+                    <input type="date" class="form-control" id="eventEndDate">
+                    <span class="form-bar"></span>
+                    <label class="form-label" for="eventEndDate">To</label>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between flex-gap-20">
-                  <div class="form-floating mb-5 w-25">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="eventVenue"
-                      placeholder="Venue / Circuit"
-                      value=""
-                    />
-                    <label for="eventVenue">Venue</label>
+                <div class="d-flex justify-content-between">
+                  <div class="form-group filled-text new-event-form-input" style="margin-right: 30px;">
+                    <input type="text" class="form-control" id="priceDiscountText" required>
+                    <span class="form-bar"></span>
+                    <label class="form-label" for="priceDiscountText">Price Discount Text</label>
                   </div>
-                  <div class="form-floating mb-5 w-75">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="eventcircuit"
-                      placeholder="Venue / Circuit"
-                      value=""
-                    />
-                    <label for="eventcircuit">Circuit name</label>
+                  <div class="form-group filled-text new-event-form-input" style="margin-left: 30px;">
+                    <input type="text" class="form-control" id="cartExpiryDate" required>
+                    <span class="form-bar"></span>
+                    <label class="form-label" for="cartExpiryDate">Cart Expiry Date (Days)</label>
                   </div>
                 </div>
+                <div class="form-group filled-text new-event-form-input">
+                  <input type="text" class="form-control" id="announcements" required>
+                  <span class="form-bar"></span>
+                  <label class="form-label" for="announcements">Announcements</label>
+                </div>
+                
                 <div class="mb-5">
                   <p for="exampleFormControlInput1" class="form-label">
                     Pricing factors
@@ -1441,6 +1406,119 @@
                 role="tabpanel"
                 aria-labelledby="pills-product-tab"
               >
+                <div class="d-flex justify-content-between flex-gap-20">
+                  <div class="input-group search-rounded mb-3">
+                    <span
+                      class="input-group-text bg-white"
+                      id="eventProductSearch_1"
+                    >
+                      <i class="material-icons-outlined text-muted">search</i>
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search for products to add..."
+                      aria-label="eventProductSearch"
+                      aria-describedby="eventProductSearch_1"
+                    />
+                  </div>
+                  <div class="w-25">
+                    <button type="button" class="btn btn-primary">Add</button>
+                  </div>
+                </div>
+                <div class="table-wrapper ev-modal-products mt-4">
+                  <p-table
+                    _ngcontent-sxi-c106=""
+                    scrollheight="430px"
+                    class="p-element"
+                  >
+                    <div
+                      id="pr_id_3"
+                      class="p-datatable p-component p-datatable-scrollable p-datatable-scrollable-vertical p-datatable-responsive-stack"
+                    >
+                      <!---->
+                      <!---->
+                      <!---->
+                      <div class="p-datatable-wrapper" style="height: 430px">
+                        <table
+                          role="table"
+                          class="p-datatable-table ng-star-inserted"
+                          id="pr_id_3-table"
+                        >
+                          <!---->
+                          <thead class="p-datatable-thead">
+                            <tr _ngcontent-sxi-c106="" class="ng-star-inserted">
+                              <th _ngcontent-oki-c116="" style="width: 3rem">
+                                <p-tableheadercheckbox
+                                  _ngcontent-oki-c116=""
+                                  class="p-element"
+                                >
+                                  <div class="p-checkbox p-component">
+                                    <div class="p-hidden-accessible">
+                                      <input type="checkbox" />
+                                    </div>
+                                    <div
+                                      role="checkbox"
+                                      aria-checked="false"
+                                      class="p-checkbox-box"
+                                    >
+                                      <span class="p-checkbox-icon"></span>
+                                    </div>
+                                  </div>
+                                </p-tableheadercheckbox>
+                              </th>
+                              <th _ngcontent-sxi-c106="">Product</th>
+                              <th _ngcontent-sxi-c106="">Available Quantity</th>
+                              <th _ngcontent-sxi-c106=""></th>
+                            </tr>
+                            <!---->
+                          </thead>
+                          <!---->
+                          <tbody class="p-element p-datatable-tbody">
+                            <!---->
+                            <tr
+                              _ngcontent-sxi-c106=""
+                              class="p-selectable-row ng-star-inserted"
+                            >
+                              <td
+                                _ngcontent-sxi-c106=""
+                                colspan="4"
+                                class="not-found justify-content-center"
+                              >
+                                <strong class="py-5"
+                                  >No products has been added.</strong
+                                >
+                              </td>
+                            </tr>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                          </tbody>
+                          <!---->
+                        </table>
+                        <!---->
+                        <!---->
+                      </div>
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                      <!---->
+                    </div>
+                  </p-table>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-deposits"
+                role="tabpanel"
+                aria-labelledby="pills-product-tab"
+              >
+              <h1>Hii</h1>
                 <div class="d-flex justify-content-between flex-gap-20">
                   <div class="input-group search-rounded mb-3">
                     <span
