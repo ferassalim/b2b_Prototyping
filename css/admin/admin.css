@@ -139,6 +139,14 @@ main {
   background: #FFFFFF;
   border-radius: 10px;
 }
+.modal-tabs-buttons{
+  color: #808080 !important;
+}
+
+.modal-tabs-buttons-active{
+  color: #0038FF !important;
+  background-color: rgba(0, 56, 255, 0.1) !important;
+}
 
 .modal-buttons-container {
   float: right; 
