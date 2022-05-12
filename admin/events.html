@@ -1293,13 +1293,16 @@
                     >VAT Inclusive</label
                   >
                 </div>
-              
-                <div style="margin-top: 20px; font-size: 16px">
+
+                
+                <div style="margin-top: 20px; font-size: 16px" data-bs-toggle="modal"
+                data-bs-target="#termsModal">
                   <label class="form-label" for="add-term-button" style=" display: inline-block;">Term and Conditions</label>
-                    <button class="btn btn-primary" id="add-term-button" style="border-radius: 23px; padding: 0px 15px 0px 15px; display: inline-block; font-size: 25px;">+</button>
+                    <button type="button" class="btn btn-primary" id="add-term-button" style="border-radius: 23px; padding: 0px 15px 0px 15px; display: inline-block; font-size: 25px;">+</button>
                   </div>
 
                   <div style="width: 30%; height: 36px; background-color: #F5F5F5; margin-top: 10px; border-radius: 4px; border: 1px solid #0000000D; padding: 5px 10px 5px 10px;"><span>t&c 1</span><button style="background-color: #f4f4f4; border: none; float: right; margin-left: 1px; margin-right: 1px;"><img src="../img/icons/delete_bin.svg"></button><button style="background-color: #f4f4f4; border: none; float: right; margin-left: 1px; margin-right: 1px;"><img src="../img/icons/edit_pen.svg"></button></div>
+
               </div>
               
               <!--  -->
@@ -1686,6 +1689,30 @@
         </form>
       </div>
     </div>
+
+    <!-- Terms and conditions Modal -->
+    <div class="modal" id="termsModal" data-bs-backdrop="static">
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">2nd Modal title</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+            </div><div class="container"></div>
+            <div class="modal-body">
+              Content for the dialog / modal goes here.
+              Content for the dialog / modal goes here.
+              Content for the dialog / modal goes here.
+              Content for the dialog / modal goes here.
+              Content for the dialog / modal goes here.
+            </div>
+            <div class="modal-footer">
+              <a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Close</a>
+              <a href="#" class="btn btn-primary">Save changes</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
 
     <!-- Edit event Modal -->
     <div

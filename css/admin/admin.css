@@ -216,3 +216,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 20px;
   border-width: thin;
 }
+
+/* .modal:nth-of-type(even) {
+  z-index: 1062 !important;
+}
+.modal-backdrop.show:nth-of-type(even) {
+  z-index: 1061 !important;
+} */
+ 
