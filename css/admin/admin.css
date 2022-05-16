@@ -360,7 +360,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 35px;
 }
 
-.profile-basic-info-card {
+.profile-from-card {
   background-color: white !important;
 }
 
@@ -403,4 +403,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-size: cover;
   background-repeat: no-repeat;
   display: inline-block;
+}
+
+.profile-radio-label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.profile-switch-button{
+  width: 48px !important; 
+  height: 26px !important;
+}
+
+.width-94{
+  width: 94%;
 }
