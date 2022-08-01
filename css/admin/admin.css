@@ -91,8 +91,11 @@ main {
   display: none;
 }
 .ev-img-placeholder {
-  width: 100px;
-  height: 107px;
+  width: 90px;
+  height: 70px; 
+  border-radius: 8px; 
+  margin-bottom: 10px; 
+  overflow: hidden;
 }
  .search-rounded{
   max-height: 38px;
@@ -119,4 +122,302 @@ main {
 }
 .search-rounded app-form-dropdown .form-group ngb-typeahead-window{
   width: 80%;
+}
+
+/* Modals */
+.steps-card{
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+}
+.details-card{
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+.modal-tabs-buttons{
+  color: #808080 !important;
+}
+
+.modal-tabs-buttons-active{
+  color: #0038FF !important;
+  background-color: rgba(0, 56, 255, 0.1) !important;
+}
+
+.modal-buttons-container {
+  float: right; 
+  text-align: end;
+}
+
+.modal-tabs-button-container {
+  width: 100% !important;
+}
+
+.modal-tabs-button-info-icon {
+  width: 16px;
+}
+.modal-tabs-button-product-icon {
+  width: 16px;
+}
+.modal-tabs-button-time-icon {
+  width: 16px;
+}
+.modal-tabs-button-deposits-icon {
+  width: 8px;
+}
+
+.modal-tabs-button-title {
+  padding-top: 2px; 
+  padding-left: 0px;
+}
+
+.modal-tabs-buttons {
+  display: block;
+  width: 95%; 
+  margin: 7px 10px 7px 10px; 
+  color: #0038FF; 
+  background-color: #F5F5F5;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px; 
+  text-align: start; 
+  border-radius: 10px; 
+  padding: 5px;
+  
+}
+
+.white-background{
+  background-color: #FFFFFF;
+}
+
+.primary-grey-backfround{
+  background-color: #F5F5F5;
+}
+
+.full-height{
+  height: 100%;
+}
+
+.new-event-form-input {
+  background-color: #F5F5F5;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  margin-top: 10px;
+  background: url(../../img/icons/triangle_down.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
+.new-event-leftside-input {
+  margin-right: 30px;
+}
+
+.new-event-rightside-input {
+  margin-left: 30px;
+}
+
+.new-event-select {
+  border-bottom: 1px solid black;
+  border-left: none; 
+  border-right: none; 
+  border-top: none;
+}
+
+.add-terms-button-container {
+  margin-top: 20px; 
+  font-size: 16px;
+}
+
+.add-terms-button-label {
+  display: inline-block;
+}
+
+.add-terms-button {
+  border-radius: 23px; 
+  padding: 0px 15px 0px 15px; 
+  display: inline-block; 
+  font-size: 25px;
+}
+
+.terms-menu-item {
+  width: 30%; 
+  height: 36px; 
+  background-color: #F5F5F5; 
+  margin-top: 10px; 
+  border-radius: 4px; 
+  border: 1px solid #0000000D; 
+  padding: 5px 10px 5px 10px;
+}
+
+.terms-menu-item-icon {
+  background-color: #f4f4f4; 
+  border: none; 
+  float: right; 
+  margin-left: 1px; 
+  margin-right: 1px;
+}
+
+.add-time-period-button {
+  border-radius: 23px;
+}
+
+.table-col-40 {
+  width: 40% !important;
+}
+
+.table-col-35 {
+  width: 35% !important;
+}
+
+.table-col-30 {
+  width: 30% !important;
+}
+
+.table-col-22-and-half {
+  width: 22.5% !important;
+}
+
+.table-col-20 {
+  width: 20% !important;
+}
+
+.table-col-15 {
+  width: 15% !important;
+}
+
+.table-col-10 {
+  width: 10% !important;
+}
+
+.tables-icon {
+  border: none; 
+  background-color: white
+}
+
+.add-product-button {
+  border-radius: 23px;
+  margin-top: 5px;
+}
+
+.products-table {
+  width: 83%;
+}
+
+.products-select {
+  border-bottom: 1px solid black; 
+  border-left: none; 
+  border-right: none; 
+  border-top: none;
+}
+
+.deposit-inputs-container {
+  width: 100% !important;
+}
+
+.add-deposit-button {
+  border-radius: 32px; 
+  margin-top: 10px;
+}
+
+.add-deposit-table {
+  height: 430px
+}
+
+.terms-modal-header {
+  font-weight: 600; 
+  font-size: 32px; 
+  padding: 25px;
+}
+
+.terms-modal-close-button {
+  border: none; 
+  background-color: unset; 
+  font-size: 32px;
+}
+
+.terms-column{
+  color: #2D78FA !important; 
+  font-size: 16px; 
+  font-weight: 400;
+}
+
+.terms-table-icon {
+  width: 26px; 
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.terms-modal-footer-buttons {
+  border-radius: 35px;
+}
+
+.profile-from-card {
+  background-color: white !important;
+}
+
+.profile-input {
+  background-color: #F5F5F5;
+}
+
+.profile-input-number-prefix{
+  border: 1px solid #ccc;
+}
+
+.profile-input-postfix-container {
+  margin-top: 27.5px;
+}
+
+.profile-phone-input-postfix-container {
+  margin-top: 40px;
+}
+
+.profile-input-postfix {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #2D78FA;
+  cursor: pointer;
+}
+
+.profile-save-button {
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.profile-image-preview {
+  width: 265px;
+  height: 290px;
+  border-radius: 12px;
+  background-position: center center;
+  background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.profile-radio-label {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.profile-switch-button{
+  width: 48px !important; 
+  height: 26px !important;
+}
+
+.width-94{
+  width: 94%;
 }
