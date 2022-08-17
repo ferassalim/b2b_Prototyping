@@ -60,6 +60,7 @@ body {
 }
 
 .go-back-button{
+  margin: 40px;
   width: 161px; 
   background-color: #3C99DC; 
   border: none; 

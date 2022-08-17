@@ -560,6 +560,3 @@ span[class^="order-"] {
   justify-content: center;
   flex-shrink: 0;
 }
-.table-wrapper.ev-listing .p-component table > tbody > tr > td:nth-child(2) {
-  font-weight: 700;
-}
